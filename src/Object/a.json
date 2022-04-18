@@ -1,0 +1,33 @@
+{
+  "displayType": "row",
+  "type": "object",
+  "properties": {
+    "fromConfigId": {
+      "type": "number",
+      "hidden": true
+    },
+    "fromList": {
+      "title": "From 配置",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "entry": {
+            "title": "布点",
+            "type": "string",
+            "widget": "entryWidget"
+          },
+          "fromId": {
+            "type": "string",
+            "widget": "from"
+          },
+          "ABTestId": {
+            "type": "any",
+            "widget": "entryWidget",
+            "hidden": true
+          }
+        }
+      }
+    }
+  }
+}
